@@ -4,6 +4,7 @@ Sub Query(pQuery As String) ' untuk menjalankan query DMl (Data Manipulation Lan
 		CUR= SQLC.ExecQuery(pQuery)						
 	Catch
 		' ToastMessageShow(LastException.Message, True)
+		log("tes")
 	End Try
 End Sub
 
