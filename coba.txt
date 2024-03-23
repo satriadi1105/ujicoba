@@ -1,2 +1,17 @@
 
-. inid adalah ujicoba
+Sub Query(pQuery As String) ' untuk menjalankan query DMl (Data Manipulation Language) menggunakan Cursor gelobarl
+	Try
+		CUR= SQLC.ExecQuery(pQuery)						
+	Catch
+		' ToastMessageShow(LastException.Message, True)
+	End Try
+End Sub
+
+Sub Query3(pQuery As String)As Cursor ' untuk menjalankan query DMl (Data Manipulation Language)menggunakan Cursor lokal
+	Try
+'		Log(pQuery)
+		Return SQLC.ExecQuery(pQuery)						
+	Catch
+		' ToastMessageShow(LastException.Message, True)
+	End Try
+End Sub
