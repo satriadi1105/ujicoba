@@ -9,9 +9,11 @@ End Sub
 
 Sub Query3(pQuery As String)As Cursor ' untuk menjalankan query DMl (Data Manipulation Language)menggunakan Cursor lokal
 	Try
-'		Log(pQuery)
+    asdkjasdlkj aspdop9qu adspjasmd a;kds
+'		Log(pQuery)asdlaskldkas
 		Return SQLC.ExecQuery(pQuery)						
 	Catch
+    asdka;sldasd as;ldasd.,  a'sdkl;asdk ;poiqwd asdka;ljd
 		' ToastMessageShow(LastException.Message, True)
 	End Try
 End Sub
